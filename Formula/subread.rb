@@ -22,6 +22,7 @@ class Subread < Formula
       bin.install "bin/subjunc"
       bin.install "bin/subread-align"
       bin.install "bin/subread-buildindex"
+      bin.install "bin/utilities/coverageCount"
     end
 
 end
