@@ -6,7 +6,7 @@ class Bowtie2 < Formula
   head "https://github.com/BenLangmead/bowtie2.git"
 
   url "https://github.com/BenLangmead/bowtie2/archive/v2.2.3.tar.gz"
-  sha1 "3186cb730f363935d18907c7222df9e1884a67fa"
+  sha256 "b5a034ae7c695a00a6a314fb557a07930755cfcd35a3c16f7cd9bdafd2eaecaf"
 
   def install
     system "make"
