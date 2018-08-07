@@ -5,7 +5,7 @@ class Blast < Formula
   #doi "10.1016/S0022-2836(05)80360-2"
   url "ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.29/ncbi-blast-2.2.29+-src.tar.gz"
   version "2.2.29"
-  sha1 "6b1e8a4b172ae01dbf2ee1ec3b4c4fce392f3eca"
+  sha256 "520a3d2212679452e273f04fb095550c64abbb7a94dcfc2c6752b8277b62f346"
 
   option "with-dll", "Create dynamic binaries instead of static"
   option "without-check", "Skip the self tests (Boost not needed)"
