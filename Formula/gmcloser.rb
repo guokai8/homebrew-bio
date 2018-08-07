@@ -3,7 +3,7 @@ require "formula"
 class Gmcloser < Formula
   homepage "http://sourceforge.net/projects/gmcloser/"
   url "https://downloads.sourceforge.net/project/gmcloser/GMcloser-1.2.tar.gz"
-  sha1 "7c3fdfc289a7f4469825f6eb7a6c773722b92754"
+  sha256 "ba176fb0bc8869274b397d37e4635cd870e7a46f242186000728714b45fa017a"
 
   def install
     doc.install "Manual_GMcloser.pdf"
