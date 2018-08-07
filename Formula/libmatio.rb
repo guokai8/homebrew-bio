@@ -3,7 +3,7 @@ require 'formula'
 class Libmatio < Formula
   homepage 'http://matio.sourceforge.net'
   url 'https://downloads.sourceforge.net/project/matio/matio/1.5.2/matio-1.5.2.tar.gz'
-  sha1 'd5a83a51eb2550d75811d2dde967ef3e167d4f52'
+  sha256 'db02d0fb3373c3d766a606309b17e64a5d8da55610e921a9f1a0ec171e911d45'
 
   option :universal
   option 'with-hdf5', 'Enable support for newer MAT files that use the HDF5-format'
