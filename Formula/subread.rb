@@ -14,11 +14,7 @@ class Subread < Formula
         sha256 "276eddaf8ab591bacb3453dba2e76a459075d13c9cf4ee9f3587e8f7194223dc"
     end
 
-    bottle do
-        cellar :any_skip_relocation
-        sha256 "00047e6b4307fbe67375e771d5497319cacfad1180810c6a51a25beea4a9294c" => :sierra_or_later
-        sha256 "2b3a28e18767219af4e968b6e0e0415fe60129ef8518102d2b74668e6babb1c0" => :x86_64_linux
-    end
+    bottle :unneeded
     def install
       bin.install "bin/exactSNP"
       bin.install "bin/featureCounts"
