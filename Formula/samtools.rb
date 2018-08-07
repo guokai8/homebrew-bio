@@ -1,4 +1,4 @@
-class SamtoolsAT01 < Formula
+class Samtools < Formula
   desc "Tools for manipulating next-generation sequencing data"
   homepage "https://samtools.sourceforge.io/"
   # doi "10.1093/bioinformatics/btp352"
