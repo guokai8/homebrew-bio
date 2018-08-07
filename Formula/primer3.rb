@@ -3,7 +3,6 @@ require "formula"
 class Primer3 < Formula
   homepage "http://primer3.sourceforge.net/"
   url "https://downloads.sourceforge.net/project/primer3/primer3/2.3.6/primer3-src-2.3.6.tar.gz"
-  sha1 "7dbd33a4e9c2a4fe06c74d6b83f8ff0f9ed1c49a"
 
   option "with-check", "Run build-time tests"
 
