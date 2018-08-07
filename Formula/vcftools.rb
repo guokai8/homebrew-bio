@@ -3,7 +3,7 @@ require 'formula'
 class Vcftools < Formula
   homepage 'http://vcftools.sourceforge.net/index.html'
   url 'https://downloads.sourceforge.net/project/vcftools/vcftools_0.1.12b.tar.gz'
-  sha1 'e90133d84c9dcab3ec130b5ed75cae6eaaa2568d'
+  sha256 '9d2324512e9f1237d5cece74ba63965eb43643e9eada8685afe8217760a20a91'
   version '0.1.12b-2' # detect new release, not an alpha/beta version
 
   depends_on "homebrew/dupes/zlib" => :optional
