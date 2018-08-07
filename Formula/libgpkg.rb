@@ -14,7 +14,7 @@ end
 class Libgpkg < Formula
   homepage "https://bitbucket.org/luciad/libgpkg"
   url "https://bitbucket.org/luciad/libgpkg/get/0.9.16.tar.gz"
-  sha1 "eb41b70b0c0d62f7bfd8b294c63e13125edb7a31"
+  sha256 "be43a2725f5fcecbe3b1baf95e6c45847f7a9a3d8ac20978b9e11aa765e8d980"
 
   head "https://bitbucket.org/luciad/libgpkg", :using => :hg, :branch => "default"
 
