@@ -3,7 +3,7 @@ require 'formula'
 class Mafft < Formula
   homepage 'http://mafft.cbrc.jp/alignment/software/index.html'
   url 'http://mafft.cbrc.jp/alignment/software/mafft-7.157-with-extensions-src.tgz'
-  sha1 '55cd5f1d6ef43cfe01c82770836c72ad32c221c4'
+  sha256 'b5cec816807d0ec481787d13ab038dc37dcaa62af647897187c289adf9301c75'
 
   fails_with :clang do
     build 421
