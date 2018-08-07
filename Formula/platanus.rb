@@ -5,13 +5,9 @@ class Platanus < Formula
   #doi "10.1101/gr.170720.113"
 
   version "1.2.1"
-  if OS.mac?
-    url "http://platanus.bio.titech.ac.jp/Platanus_release/20140423010201/platanus.macOSX"
-    sha1 "efeca85a45cbc802c7c0ff4771f83e14889b31e8"
-  elsif OS.linux?
-    url "http://platanus.bio.titech.ac.jp/Platanus_release/20130901010201/platanus"
-    sha1 "be6e0a8aaf89b017f70a2bc1e0acc292fb03511d"
-  end
+  url "http://platanus.bio.titech.ac.jp/Platanus_release/20130901010201/platanus"
+  sha256 "305368ecd91da8c5c0e18569aa58538b0cca99cf3e7360ad9b116db74a37b8ad"
+
 
   depends_on "gcc" if OS.mac?
 
