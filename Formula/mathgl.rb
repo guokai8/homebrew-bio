@@ -11,7 +11,7 @@ class Mathgl < Formula
 
   homepage 'http://mathgl.sourceforge.net/'
   url 'https://downloads.sourceforge.net/mathgl/mathgl-2.2.2.1.tar.gz'
-  sha1 '7d450028728384782315d4d5f5c4dd8b67c29e3b'
+  sha256 '2842e5f6b05dc57fb3e3a935833c51d26758aeda7f006e343c286cbb0b29982a'
 
   option 'with-qt=', 'Build with Qt 4 or 5 support'
 
