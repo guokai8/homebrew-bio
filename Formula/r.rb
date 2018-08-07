@@ -9,9 +9,8 @@ end
 
 class R < Formula
   homepage 'http://www.r-project.org/'
-  url 'http://cran.rstudio.com/src/base/R-3/R-3.1.1.tar.gz'
-  mirror 'http://cran.r-project.org/src/base/R-3/R-3.1.1.tar.gz'
-  sha1 'e974ecc92e49266529e8e791e02a80c75e50b696'
+  url 'https://cran.rstudio.com/src/base/R-3/R-3.5.0.tar.gz'
+  sha256 'fd1725535e21797d3d9fea8963d99be0ba4c3aecadcf081b43e261458b416870'
 
   head do
     url 'https://svn.r-project.org/R/trunk', :using => RDownloadStrategy
@@ -107,8 +106,8 @@ class R < Formula
 
       if OS.mac?
         lib.mkpath
-        ln_s prefix+"R.framework/Versions/3.1/Resources/lib/libRmath.dylib", lib
-        ln_s prefix+"R.framework/Versions/3.1/Resources/include/Rmath.h", include
+        ln_s prefix+"R.framework/Versions/3.5/Resources/lib/libRmath.dylib", lib
+        ln_s prefix+"R.framework/Versions/3.5/Resources/include/Rmath.h", include
       end
     end
 
