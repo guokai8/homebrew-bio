@@ -4,7 +4,7 @@ class Maker < Formula
   homepage 'http://www.yandell-lab.org/software/maker.html'
   #doi '10.1101/gr.6743907' => 'MAKER', '10.1186/1471-2105-12-491' => 'MAKER2', '10.1104/pp.113.230144' => 'MAKER-P'
   url 'http://yandell.topaz.genetics.utah.edu/maker_downloads/static/maker-2.31.5.tgz'
-  sha1 '99de5cd075951fb100f6bafb23481e8d9e54724f'
+  sha256 'e0ef23d6abff5fff9aa0d512e209e309e7a8f705c07a87701659de02f6e904f8'
 
   depends_on 'augustus' => :optional
   depends_on 'blast' => :recommended
