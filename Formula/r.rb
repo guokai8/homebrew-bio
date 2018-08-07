@@ -33,11 +33,6 @@ class R < Formula
   depends_on 'openblas' => :optional
 
   # This is the same script that Debian packages use.
-  resource 'completion' do
-    url 'https://rcompletion.googlecode.com/svn-history/r28/trunk/bash_completion/R', :using => :curl
-    version 'r28'
-    sha1 'af734b8624b33f2245bf88d6782bea0dc5d829a4'
-  end
 
   def install
     args = [
