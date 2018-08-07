@@ -4,7 +4,7 @@ class Glimmer3 < Formula
   homepage 'http://ccb.jhu.edu/software/glimmer/index.shtml'
   url 'http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz'
   version "3.02b"
-  sha1 '665ed5c676c6d495e4354893e67ee605ec3e00da'
+  sha256 'ecf28e03d0a675aed7360ca34ca7f19993f5c3ea889273e657ced9fa7d1e2bf6'
 
   depends_on "elph"
 
