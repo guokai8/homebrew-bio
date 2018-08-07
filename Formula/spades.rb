@@ -5,7 +5,7 @@ class Spades < Formula
   #tag "bioinformatics"
   #doi "10.1089/cmb.2012.0021"
   url "http://spades.bioinf.spbau.ru/release3.1.1/SPAdes-3.1.1.tar.gz"
-  sha1 "fe316a7620599ae4e5b1cba92316f79cac107fa2"
+  sha256 "ea5e4961c72813740d3293e330636a0627867ace65bc2a38fc425de24bc62d47"
 
   depends_on 'cmake' => :build
 
