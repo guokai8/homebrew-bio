@@ -3,7 +3,7 @@ require 'formula'
 class Libccd < Formula
   homepage 'http://libccd.danfis.cz'
   url 'http://libccd.danfis.cz/files/libccd-1.4.tar.gz'
-  sha1 'abf924ad6e3f427d58734f67348de23970704cbd'
+  sha256 '7379234faad3eb82bbcff686c14489c05ed2474b9a55781e26b05ef207df1ec5'
   head 'https://github.com/danfis/libccd.git'
 
   depends_on 'cmake' => :build
