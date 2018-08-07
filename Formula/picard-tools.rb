@@ -3,7 +3,7 @@ require 'formula'
 class PicardTools < Formula
   homepage "http://broadinstitute.github.io/picard/"
   url "https://github.com/broadinstitute/picard/releases/download/1.120/picard-tools-1.120.zip"
-  sha1 "355a9bdb9d11b1669ff340535307d481e985599d"
+  sha256 "9831a6fa4d17eeb20d53e26bfb2b20793732f6693878f7dd7f408aa0f92a1e57"
 
   def install
     (share/'java').install Dir['*.jar', "picard-tools-#{version}/*.jar"]
