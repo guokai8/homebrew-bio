@@ -20,12 +20,12 @@ class Subread < Formula
         sha256 "2b3a28e18767219af4e968b6e0e0415fe60129ef8518102d2b74668e6babb1c0" => :x86_64_linux
     end
     def install
-      bin.install "exactSNP"
-      bin.install "featureCounts"
-      bin.install "subindel"
-      bin.install "subjunc"
-      bin.install "subread-align"
-      bin.install "subread-buildindex"
+      bin.install "bin/exactSNP"
+      bin.install "bin/featureCounts"
+      bin.install "bin/subindel"
+      bin.install "bin/subjunc"
+      bin.install "bin/subread-align"
+      bin.install "bin/subread-buildindex"
     end
 
 end
