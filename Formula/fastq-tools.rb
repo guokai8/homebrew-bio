@@ -3,7 +3,7 @@ require "formula"
 class FastqTools < Formula
   homepage "http://homes.cs.washington.edu/~dcjones/fastq-tools/"
   url "https://homes.cs.washington.edu/~dcjones/fastq-tools/fastq-tools-0.6.tar.gz"
-  sha1 "4c4d455e59ec89cc73ffa7701f9ff40c86cee2e0"
+  sha256 "e671751b3bb776daefa017757b540f8ef14b5d8b00f90b97cbfac1146178c687"
 
   depends_on "pcre" => :build
 
