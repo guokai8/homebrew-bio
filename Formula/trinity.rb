@@ -23,8 +23,6 @@ class Trinity < Formula
   depends_on "htslib"
   depends_on "gcc"
 
-  depends_on :java => "1.8+"
-
   # Trinity doesn't link to eXpress, which depends on Boost, built with C++11
   cxxstdlib_check :skip
 
