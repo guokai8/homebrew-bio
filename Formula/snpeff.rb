@@ -35,17 +35,4 @@ class Snpeff < Formula
       pkgshare.install "workflow", "report"
     end
   end
-
-  def caveats; <<~EOS
-    Download the human database using the command
-      snpEff download -v GRCh38.82
-    The databases will be installed in #{pkgshare}/data
-    EOS
-  end
-
-  test do
-    assert_match version.to_s, shell_output("#{bin}/snpEff -version 2>&1")
-    assert_match "Concordance", shell_output("#{bin}/SnpSift 2>&1", 1)
-    assert_match "annotations", shell_output("#{bin}/ClinEff -h 2>&1", 255)
-  end
 end
