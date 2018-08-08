@@ -2,18 +2,20 @@ require "formula"
 
 class Gmcloser < Formula
   homepage "http://sourceforge.net/projects/gmcloser/"
-  url "https://downloads.sourceforge.net/project/gmcloser/GMcloser-1.2.tar.gz"
-  sha256 "ba176fb0bc8869274b397d37e4635cd870e7a46f242186000728714b45fa017a"
+  url "https://ayera.dl.sourceforge.net/project/gmcloser/GMcloser-1.6.2.tar.gz"
+  sha256 "b5f43cf411b92aaba76e90ab82acbd50c491a95f15ade088fbbb97f593281cc6"
 
-  def install
-    doc.install "Manual_GMcloser.pdf"
-    libexec.install Dir["*"]
-    (bin/'gmcloser').write <<-EOS.undent
-      #!/bin/sh
-      set -eu
-      exec #{libexec}/gmcloser "$@"
-    EOS
-  end
+  bottle :unneeded
+    def install
+      bin.install "gmcloser"
+      bin.install "gmvalue"
+      bin.install "gmcloser-blast-LR-MT.pl"
+      bin.install "gmcloser-blast.pl"
+      bin.install "gmcloser-nucmer.pl"
+      bin.install "Nucmer_contig_align.pl"
+      bin.install "connect_subcontigs_GMcloser2.pl"
+      bin.install "coval-filter-short.pl"
+    end
 
   test do
     system "#{bin}/gmcloser --help"
