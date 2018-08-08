@@ -16,7 +16,6 @@ class Trinity < Formula
     sha256 "f742197ec74fa55782a175894ba53f83204c7445050c467d7229f2891feeb210" => :x86_64_linux
   end
 
-  depends_on "express" => :recommended
   depends_on "bowtie2"
   depends_on "jellyfish"
   depends_on "trimmomatic"
