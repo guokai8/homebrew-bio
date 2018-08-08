@@ -68,21 +68,4 @@ class Trinity < Formula
       PERL5LIB="#{prefix}/PerlLib" exec "#{prefix}/Trinity" "$@"
     EOS
   end
-
-  def caveats; <<~EOS
-    Trinity only officially supports Java 1.8. To skip this check pass the
-    option --bypass_java_version_check to Trinity. A specific Java version may
-    also be set via environment variable:
-      JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-    EOS
-  end
-
-  test do
-    cp_r Dir["#{prefix}/sample_data/test_Trinity_Assembly/*.fq.gz"], "."
-    system "#{bin}/Trinity",
-      "--no_distributed_trinity_exec", "--bypass_java_version_check",
-      "--seqType", "fq", "--max_memory", "1G", "--SS_lib_type", "RF",
-      "--left", "reads.left.fq.gz,reads2.left.fq.gz",
-      "--right", "reads.right.fq.gz,reads2.right.fq.gz"
-  end
 end
