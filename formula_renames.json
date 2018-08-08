@@ -1,0 +1,7 @@
+{
+  "gal-sim": "galsim",
+  "geant": "geant4",
+  "hdf@4": "hdf4",
+  "samtools-0.1": "samtools@0.1",
+  "snp_sites": "snp-sites"
+}
