@@ -1,36 +1,24 @@
 class Cufflinks < Formula
   desc "Transcriptome assembly, differential expression analysis for RNA-Seq"
   homepage "https://cole-trapnell-lab.github.io/cufflinks/"
-  url "https://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.tar.gz"
-  sha256 "e8316b66177914f14b3a0c317e436d386a46c4c212ca1b2326f89f8a2e08d5ae"
-  revision 4
-
-  bottle :disable, "needs to be rebuilt with latest boost"
-
-  if OS.mac? && MacOS.version == :mavericks
-    depends_on "boost@1.55"
-  else
-    depends_on "boost"
-  end
-
-  depends_on "samtools@0.1" => :build
-  depends_on "eigen"
+   if OS.linux?
+        url "http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.Linux_x86_64.tar.gz"
+        sha256 "39f812452cae26462e5d2671d38104d9e8ef30aaf9ab6dea8ca57f50f46448e4"
+    else
+        url "http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.OSX_x86_64.tar.gz"
+        sha256 "98a78cdf9e38783f9809d74faadc70654977d5f6120e262ef623a04840da00c6"
+    end
+  bottle :unneeded
 
   def install
-    inreplace "src/biascorrection.h", "boost/tr1/unordered_map.hpp", "boost/unordered_map.hpp"
-
-    # Reduce memory usage below 4 GB for Circle CI.
-    ENV["MAKEFLAGS"] = "-j4" if ENV["CIRCLECI"]
-
-    ENV["EIGEN_CPPFLAGS"] = "-I#{Formula["eigen"].opt_include}/eigen3"
-    ENV.append "LIBS", "-lboost_system-mt -lboost_thread-mt -lboost_serialization-mt"
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--prefix=#{prefix}",
-                          "--mandir=#{man}"
-    system "make"
-    ENV.deparallelize
-    system "make", "install"
+      bin.install "gtf_to_sam"
+      bin.install "cuffcompare"
+      bin.install "cuffdiff"
+      bin.install "cufflinks"
+      bin.install "cuffmerge"
+      bin.install "cuffnorm"
+      bin.install "gffread"
+      bin.install "cuffquant"
   end
 
   test do
